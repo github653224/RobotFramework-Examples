@@ -1,0 +1,114 @@
+Learn RST writing
+=================
+
+*italic*
+
+**bold**
+
+This ``*`` character is not interpreted
+
+This is how to create hyperlinks (see later)  `OpenAlea wiki <openalea.gforge.inria.fr>`_
+
+*****
+Title
+*****
+
+subtitle
+########
+
+subsubtitle
+***********
+
+`Internal and External links`_
+
+`Python <http://www.python.org/>`_
+
+
+* This is a bulleted list.
+* It has two items, the second
+  item uses two lines. (note the indentation)
+
+1. This is a numbered list.
+2. It has two items too.
+  - jeevan
+  - chaitanya
+  + hellow
+
+#. This is a numbered list.
+#. It has two items too.
+
++------------+------------+-----------+
+| Header 1   | Header 2   | Header 3  |
++============+============+===========+
+| body row 1 | column 2   | column 3  |
++------------+------------+-----------+
+| body row 2 | Cells may span columns.|
++------------+------------+-----------+
+| body row 3 | Cells may  | - Cells   |
++------------+ span rows. | - contain |
+| body row 4 |            | - blocks. |
++------------+------------+-----------+
+
+=====  =====  ======
+   Inputs     Output
+------------  ------
+  A      B    A or B
+=====  =====  ======
+False  False  False
+True   False  True
+=====  =====  ======
+
+
+.. comments
+
+
+
+.. _Python: http://www.python.org/
+Then, write your text inserting the keywrod Python_ . The final result will be as follows: Python .
+
+.. _Jeevan: http://google.com/
+
+jeevan_
+
+
+.. |longtext| replace:: ``this is a very very long text to include``
+
+and then insert |longtext| wherever needed.
+
+
+.. literalinclude:: config.py
+    :linenos:
+    :language: python
+    :lines: 1, 3-5
+    :start-after: 3
+    :end-before: 5
+
+.. image:: ../images/robo.jpg
+	:align: center
+
+.. topic:: Your Topic Title
+
+    Subsequent indented lines comprise
+    the body of the topic, and are
+    interpreted as body elements.
+
+.. sidebar:: Sidebar Title
+        :subtitle: Optional Sidebar Subtitle
+
+   Subsequent indented lines comprise
+   the body of the sidebar, and are
+   interpreted as body elements.
+
+
+.. below are suggestions
+.. seealso:: This is a simple **seealso** note. Other inline directive may be included (e.g., math :math:`\alpha`) but not al of them.
+.. Note:: This is a simple **seealso** note. Other inline directive may be included (e.g., math :math:`\alpha`) but not al of them.
+.. Warning:: This is a simple **seealso** note. Other inline directive may be included (e.g., math :math:`\alpha`) but not al of them.
+.. Todo:: This is a simple **seealso** note. Other inline directive may be included (e.g., math :math:`\alpha`) but not al of them.
+
+.. Below is for wirting code block
+.. code-block:: python
+    :linenos:
+
+    import math
+    print 'import done'
