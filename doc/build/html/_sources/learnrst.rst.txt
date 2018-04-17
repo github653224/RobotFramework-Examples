@@ -66,18 +66,13 @@ True   False  True
 .. _Python: http://www.python.org/
 Then, write your text inserting the keywrod Python_ . The final result will be as follows: Python .
 
-.. _Jeevan: http://google.com/
-
-jeevan_
-
-
 .. |longtext| replace:: ``this is a very very long text to include``
 
 and then insert |longtext| wherever needed.
 
 
 .. literalinclude:: config.py
-    :linenos:
+    :linenos: 10
     :language: python
     :lines: 1, 3-5
     :start-after: 3

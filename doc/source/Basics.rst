@@ -21,7 +21,7 @@ Installation Verification:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 ``pybot --version``
 
-.. image:: ../images/Install_verify.jpg
+.. image:: ../images/Install_verify.JPG
 
 
 
